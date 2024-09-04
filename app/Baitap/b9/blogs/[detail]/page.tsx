@@ -43,7 +43,7 @@ export default function Detail(props: any) {
     <div>
       {blogFilter.map((item) => {
         return (
-          <div className="p-6">
+          <div className="p-6" key={item.id}>
             <p>Id : {item.id}</p>
             <p>Tiêu đề : {item.title}</p>
             <p>Số giờ học : {item.time}</p>

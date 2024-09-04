@@ -37,9 +37,9 @@ export default function Blog() {
       <h1>Bài 9 :</h1>
       <h2 className="text-center font-bold text-2xl">Danh sách bài viết</h2>
       <div className="flex flex-wrap justify-center gap-10">
-        {blogs.map((item, index) => {
+        {blogs.map((item) => {
           return (
-            <div key={index} className="my-10">
+            <div key={item.id} className="my-10">
               <div className="w-56 h-72 border-solid border-2 border-gray-300 rounded-sm">
                 <Image
                   src={item.image}
